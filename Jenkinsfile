@@ -10,5 +10,11 @@ pipeline {
                 sh "echo lintChecks completed"
             }
         }
+        stage('Generating Artifacts') {
+            steps {
+                sh "echo Generating Artifacts..."
+                sh "npm install"
+            }
+        }
     }
 } 
